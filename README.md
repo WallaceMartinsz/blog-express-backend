@@ -30,19 +30,19 @@ Para rodar utilizer no cmd o seguinte comando:
 ### Retorna todos os posts
 
 ```http
-  GET /api/items
+  GET /api/posts
 ```
 
 ###  Retorna um post
 
 ```http
-  GET /api/post/${id}
+  GET /api/posts/${id}
 ```
 
 ### Adicionar um post
 
 ```http
-  POST /api/post
+  POST /api/posts
 ```
 O body deve ser o seguinte: 
 ```
@@ -58,7 +58,7 @@ O body deve ser o seguinte:
 ### Atualizar um post
 
 ```http
-  PUT /api/post/${id}
+  PUT /api/posts/${id}
 ```
 O body deve ser de acordo com o que você deseja alterar ou todos os campos: 
 ```
@@ -74,5 +74,5 @@ O body deve ser de acordo com o que você deseja alterar ou todos os campos:
 #### Deletar um post
 
 ```http
-  DELETE /api/post/${id}
+  DELETE /api/posts/${id}
 ```
