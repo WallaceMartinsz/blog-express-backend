@@ -1,7 +1,11 @@
 const mongoose = require('mongoose');
 
 const comentarioSchema = new mongoose.Schema({
-  texto: { type: String, required: true },
+  texto: { type: String, required: true }
+},{
+  versionKey: false,
 });
 
-module.exports = comentarioSchema;
+const Comentario = mongoose.model('Comentario', comentarioSchema);
+
+module.exports = Comentario;
